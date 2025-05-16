@@ -13,6 +13,6 @@ public class Ex09 {
         // ax^2 + bx + c = 0;
         // input a , b, c
         // out: result
-
+        // https://www.youtube.com/watch?v=qUuUJXkeGgk
     }
 }
