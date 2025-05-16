@@ -1,1 +1,3 @@
-https://uw-edu-pl.zoom.us/j/9738890920
++ zoom: https://uw-edu-pl.zoom.us/j/9738890920
++ source: https://github.com/lenhattung/daythay/
++ video xem lại buổi học: https://youtu.be/sFxXIUcfSPU
