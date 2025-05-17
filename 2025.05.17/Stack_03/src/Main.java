@@ -15,20 +15,22 @@ public class Main {
         stack.push(b2);
         stack.push(b3);
         
+        stack.push(new Integer(3));
+        
         // Display the stack
         System.out.println("\nDisplaying the stack:");
         stack.display();
         
         // Peek operation
         System.out.println("\nPeeking at the top element:");
-        Book topBook = stack.peek();
+        Book topBook = (Book) stack.peek();
         if (topBook != null) {
             System.out.println("Top book: " + topBook.getTitle() + " by " + topBook.getAuthor());
         }
         
         // Pop operation
         System.out.println("\nPopping a book from the stack:");
-        Book poppedBook = stack.pop();
+        Book poppedBook = (Book) stack.pop();
         if (poppedBook != null) {
             System.out.println("Popped book: " + poppedBook.getTitle() + " by " + poppedBook.getAuthor());
         }
@@ -48,7 +50,7 @@ public class Main {
         // Pop all remaining books
         System.out.println("\nPopping all remaining books:");
         while (!stack.isEmpty()) {
-            Book book = stack.pop();
+            Book book = (Book) stack.pop();
             System.out.println("Popped: " + book.getTitle());
         }
         
@@ -57,14 +59,14 @@ public class Main {
         
         // Try to peek on empty stack
         System.out.println("\nTrying to peek on empty stack:");
-        Book emptyPeek = stack.peek();
+        Book emptyPeek = (Book) stack.peek();
         if (emptyPeek == null) {
             System.out.println("Stack is empty, nothing to peek.");
         }
         
         // Try to pop from empty stack
         System.out.println("\nTrying to pop from empty stack:");
-        Book emptyPop = stack.pop();
+        Book emptyPop = (Book) stack.pop();
         if (emptyPop == null) {
             System.out.println("Stack is empty, nothing to pop.");
         }

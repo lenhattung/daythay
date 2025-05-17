@@ -8,17 +8,17 @@
  * @author tungi
  */
 public class Node {
-    Book info;
+
+    Object info;
     Node next;
 
-    public Node(Book info, Node next) {
+    public Node(Object info, Node next) {
         this.info = info;
         this.next = next;
     }
 
-    public Node(Book info) {
+    public Node(Object info) {
         this.info = info;
     }
-    
     
 }

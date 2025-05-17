@@ -7,16 +7,16 @@
  *
  * @author tungi
  */
-public class Node {
-    Book info;
+public class Node<T> { // Generic
+    T info;
     Node next;
 
-    public Node(Book info, Node next) {
+    public Node(T info, Node next) {
         this.info = info;
         this.next = next;
     }
 
-    public Node(Book info) {
+    public Node(T info) {
         this.info = info;
     }
     
