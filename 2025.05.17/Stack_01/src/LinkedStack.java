@@ -21,6 +21,31 @@ public class LinkedStack {
     }
 
     // push
+    public void push(int x){
+        //head = new Node(x, head);
+       
+        Node newNode = new Node(x);
+        newNode.next = head;
+        head = newNode;
+    }
+    
     // top // peek
+    public int top(){
+        return head.info;
+    }
+    
     // pop
+    public int pop(){
+        int value = head.info;
+        head = head.next;
+        return value;
+    }
+    
+    public void display(){
+        Node p = head;
+        while(p!=null){
+            System.out.print(p.info+" ");
+            p = p.next;
+        }
+    }
 }
