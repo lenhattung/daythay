@@ -1,36 +1,53 @@
+
+import java.util.EmptyStackException;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 /**
  *
  * @author tungi
  */
 public class MyStack {
+
     Node top;
 
     public MyStack() {
         top = null;
     }
-    
-    public boolean isEmpty(){
-        
+
+    public boolean isEmpty() {
+        return top == null;
     }
-    
-    public void push(Book b){
-        
+
+    public void push(Book b) {
+        Node newNode = new Node(b);
+        newNode.next = top;
+        top = newNode;
     }
-    
-    public Book pop(){
-        
+
+    public Book pop() throws EmptyStackException {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        Book value = top.info;
+        top = top.next;
+        return value;
     }
-    
-    public Book peek(){
-        
+
+    public Book peek() throws EmptyStackException {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return top.info;
     }
-    
-    public void display(){
-        
+
+    public void display() {
+        Node p = top;
+        while (p != null) {
+            System.out.println(p.info);
+            p = p.next;
+        }
     }
 }

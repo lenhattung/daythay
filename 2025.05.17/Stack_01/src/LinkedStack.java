@@ -1,3 +1,6 @@
+
+import java.util.EmptyStackException;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -30,12 +33,18 @@ public class LinkedStack {
     }
     
     // top // peek
-    public int top(){
+    public int top() throws EmptyStackException{
+        if(isEmpty()){
+            throw new EmptyStackException();
+        }
         return head.info;
     }
     
     // pop
-    public int pop(){
+    public int pop()throws EmptyStackException{
+         if(isEmpty()){
+            throw new EmptyStackException();
+        }
         int value = head.info;
         head = head.next;
         return value;
