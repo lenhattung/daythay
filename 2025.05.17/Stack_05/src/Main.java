@@ -15,5 +15,6 @@ public class Main {
         Stack<String> s1 = new Stack<String>();
         s1.push("5");
         s1.pop();
+        s1.peek();
     }
 }
