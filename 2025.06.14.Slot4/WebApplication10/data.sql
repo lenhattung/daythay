@@ -60,4 +60,4 @@ GO
 -- Thay doi du lieu
 -- Them cot: image, type la TEXT
 ALTER TABLE tblProducts
-ADD  image TEXT;
+ADD image TEXT;
