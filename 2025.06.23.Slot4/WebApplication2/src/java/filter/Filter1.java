@@ -20,7 +20,7 @@ import jakarta.servlet.annotation.WebFilter;
  *
  * @author tungi
  */
-@WebFilter(filterName = "Filter1", urlPatterns = {"/f1/*"})
+@WebFilter(filterName = "Filter1", urlPatterns = {"/f1/*", "/f2/*"})
 public class Filter1 implements Filter {
     
     private static final boolean debug = true;
