@@ -37,6 +37,7 @@ public class AntiqueShop {
                           break  	              case 3:
                             ….
  	            break;                
+            
           …..     }//end switch
   } while(choice <= 9);            //end while
     }  //end class
