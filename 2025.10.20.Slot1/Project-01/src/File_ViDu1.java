@@ -103,6 +103,6 @@ public class File_ViDu1 {
 
         deleteB(file.getAbsolutePath());
         
-        deleteB("D:\\");
+        //deleteB("D:\\");
     }
 }
